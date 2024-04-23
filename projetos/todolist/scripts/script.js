@@ -31,12 +31,11 @@ function gravar() {
 }
 
 function ataulizarTabela() {
-    localStorage.setItem("lsItem",JSON.stringify(lsItem));
     let tbody = '';
     if (lsItem.length > 0) {
         let i = 0;
         for (const obj of lsItem) {
-            tbody += `<tr onclick='editar(${i})'><td class="${tpStatus[obj.status]}"><input type="checkbox" >  ${obj.item}</td></tr>`;
+            tbody += `<tr onclick='editar(${i})'><td class="${tpStatus[obj.status]}">${obj.item}</td></tr>`;
             i++;
         }
     } else {
@@ -68,11 +67,3 @@ function apagar() {
         alert("Necessário selecionar algum item.")
     }
 }
-
-lsItem = JSON.parse(localStorage.getItem("lsItem"));
-if(lsItem == null){
-    localStorage.setItem("lsItem","[]");
-    lsItem = [];
-}
-
-ataulizarTabela();
