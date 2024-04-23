@@ -1,0 +1,46 @@
+form {
+    background-color: #607d8b;
+    width: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+input {
+    width: 98%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 20px;
+}
+
+button {
+    height: 30px;
+    background-color: #00000054;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: hsla(0, 0%, 23%, 0.308);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+span {
+    margin-left: 15px;
+    /* background-color: #ff2222; */
+    padding: 5px 30px;
+}
